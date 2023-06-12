@@ -68,7 +68,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="1" Grid.Row="4">
-                    <Label  x:Name="Pais"/>
+                    <Label  x:Name="Pais1"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="0" Grid.Row="5">
