@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace MC_LlamadaApi.Model
 {
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class Clouds
     {
         public int all { get; set; }
@@ -49,6 +48,9 @@ namespace MC_LlamadaApi.Model
 
     public class Sys
     {
+        public int type { get; set; }
+        public int id { get; set; }
+        public string country { get; set; }
         public int sunrise { get; set; }
         public int sunset { get; set; }
     }
@@ -67,6 +69,7 @@ namespace MC_LlamadaApi.Model
         public int deg { get; set; }
         public double gust { get; set; }
     }
+
 
 
 }

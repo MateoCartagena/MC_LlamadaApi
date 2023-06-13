@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
+        Title="MC_Llamada.API"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

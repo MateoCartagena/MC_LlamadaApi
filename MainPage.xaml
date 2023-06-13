@@ -21,64 +21,52 @@
 
                 <VerticalStackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Center">
                     <Label Text="Latitud"/>
-
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="0" Grid.Row="1"  HorizontalOptions="Center">
                     <Entry
                         x:Name="lat"
-                   Text="{Binding Longitud}"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
+                        Placeholder="Ingrese latitud"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="1" Grid.Row="0"  HorizontalOptions="Center">
                     <Label Text="Longitud"/>
-
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="1" Grid.Row="1"  HorizontalOptions="Center">
                     <Entry
                         x:Name="lon"
-                   Text="{Binding Longitud}"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" />
+                        Placeholder="Ingrese Longitud" />
                 </VerticalStackLayout>
 
-                <HorizontalStackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Button Text="Dame el clima"
-                    Clicked="IngresarButtonClicked"
-                    HorizontalOptions="Center"
-                  VerticalOptions="CenterAndExpand" />
-                </HorizontalStackLayout>
+                <VerticalStackLayout Grid.ColumnSpan="2" Grid.Row="2">
+                <Button Text="Dame el clima"
+                    Clicked="IngresarButtonClicked" />
+                </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="0" Grid.Row="3">
-                    <Label Text="Estado de clima:"/>
-
+                    <Label Text="Estado de clima:" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="1" Grid.Row="3">
-                    <Label x:Name="weathelabel"/>
-                
+                    <Entry x:Name="Estado" IsReadOnly="True"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="0" Grid.Row="4">
-                    <Label Text="Pais:"/>
-
+                    <Label Text="Pais:" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="1" Grid.Row="4">
-                    <Label  x:Name="Pais1"/>
+                    <Entry x:Name="Pais" IsReadOnly="True"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="0" Grid.Row="5">
-                    <Label Text="Ciudad:"/>
+                    <Label Text="Ciudad:" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Column="1" Grid.Row="5">
-                            <Label x:Name="Ciudad"/>
-
-                        </VerticalStackLayout>
+                    <Entry x:Name="Ciudad" IsReadOnly="True"/>
+                </VerticalStackLayout>
 
 
             </Grid>
